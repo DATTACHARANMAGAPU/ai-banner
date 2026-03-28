@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1234567890,
+      "username": "demo_user",
+      "password": "demo123",
+      "created": "2024-03-27T00:00:00.000Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1234567891,
+      "userId": 1234567890,
+      "title": "Discover Innovation",
+      "desc": "Crafted by Gemini AI for your unique brand identity.",
+      "created": "2024-03-27T10:00:00.000Z"
+    }
+  ],
+  "exported": "2024-03-27T15:30:00.000Z"
+}

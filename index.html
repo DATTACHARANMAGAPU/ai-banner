@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BannerApp | Advanced AI Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="brand">GEN-AI<span>BANNER</span></div>
+        <div id="nav-actions">
+            <button class="btn-text" id="show-login">Sign In</button>
+            <button class="btn-primary" id="show-signup">Get Started</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="badge">Powered by Gemini Pro</div>
+                <h1>Intelligence in every <span>Pixel</span></h1>
+                <p>Generate high-conversion banner headlines and subtext instantly.</p>
+                
+                <div class="glass-card ai-input-zone">
+                    <input type="text" id="user-prompt" placeholder="e.g. 'Diwali 2026', 'Christmas Sale', 'New Year' or any theme">
+                    <button id="generate-btn" class="glow-button">Generate Banner</button>
+                </div>
+                <div id="ai-status" class="ai-status"></div>
+
+                <!-- Example Cases -->
+                <div class="examples-section">
+                    <p class="examples-label">Popular templates:</p>
+                    <div class="examples-grid">
+                        <!-- Festivals & Celebrations -->
+                        <button class="example-btn" data-prompt="Diwali 29th March 2026 golden lamps fireworks">🎆 Diwali Festival</button>
+                        <button class="example-btn" data-prompt="Christmas tree snowfall festive lights">🎄 Christmas Party</button>
+                        <button class="example-btn" data-prompt="Happy New Year Eve party fireworks 2026">🎉 New Year Party</button>
+                        <button class="example-btn" data-prompt="Easter celebration colorful eggs bunny">🐣 Easter Bunny</button>
+                        <button class="example-btn" data-prompt="Halloween party pumpkins spooky dark">👻 Halloween Bash</button>
+                        <button class="example-btn" data-prompt="Valentine's Day romantic flowers hearts">💕 Valentine Love</button>
+                        
+                        <!-- Life Events -->
+                        <button class="example-btn" data-prompt="Happy Birthday celebration colorful balloons">🎂 Birthday Party</button>
+                        <button class="example-btn" data-prompt="Graduation day academic achievement success">🎓 Graduation Day</button>
+                        <button class="example-btn" data-prompt="Wedding ceremony elegant flowers romance">💑 Wedding Ceremony</button>
+                        <button class="example-btn" data-prompt="Baby shower pink blue celebration">👶 Baby Shower</button>
+                        
+                        <!-- Nature & Travel -->
+                        <button class="example-btn" data-prompt="Summer beach vacation ocean waves sand">🏖️ Beach Vacation</button>
+                        <button class="example-btn" data-prompt="Mountain adventure hiking peaks nature">⛰️ Mountain Hiking</button>
+                        <button class="example-btn" data-prompt="Forest adventure green trees nature">🌲 Forest Adventure</button>
+                        <button class="example-btn" data-prompt="Garden beautiful flowers plants blooming">🌸 Garden Blooms</button>
+                        
+                        <!-- Sports & Lifestyle -->
+                        <button class="example-btn" data-prompt="Fitness challenge gym workout strength">💪 Fitness Goal</button>
+                        <button class="example-btn" data-prompt="Gaming tournament esports competition">🎮 Gaming Battle</button>
+                        <button class="example-btn" data-prompt="Sports championship soccer football trophy">⚽ Sports Trophy</button>
+                        <button class="example-btn" data-prompt="Music festival concert live performance">🎵 Music Festival</button>
+                        
+                        <!-- Business & Professional -->
+                        <button class="example-btn" data-prompt="Tech conference innovation future technology">💻 Tech Innovation</button>
+                        <button class="example-btn" data-prompt="Business meeting professional success growth">📊 Business Growth</button>
+                        <button class="example-btn" data-prompt="Coffee shop cozy ambiance cafe meetup">☕ Coffee Lounge</button>
+                        <button class="example-btn" data-prompt="Product launch exciting announcement new">🚀 Product Launch</button>
+                    </div>
+                </div>
+
+                <div id="display-area" class="banner-preview hidden">
+                    <div class="preview-content">
+                        <h2 id="banner-h2">Your Headline</h2>
+                        <p id="banner-p">Your generated subtext will appear here.</p>
+                        
+                        <div class="image-section">
+                            <img id="banner-image" src="" alt="banner" class="banner-img hidden">
+                            <div class="image-controls">
+                                <button id="download-image" class="glow-button">📥 Download Generated Banner</button>
+                                <label for="upload-image" class="glow-button">📤 Replace with Custom Image</label>
+                                <input type="file" id="upload-image" accept="image/*" class="hidden-file-input">
+                                <button id="export-banner" class="glow-button">💾 Save All to JSON</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="auth-overlay" class="overlay hidden">
+            <div class="glass-card auth-card">
+                <button class="close-btn">&times;</button>
+                <div id="auth-content">
+                    <!-- Login/Signup forms injected here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

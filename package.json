@@ -1,0 +1,29 @@
+{
+  "name": "ai-banner-generator",
+  "version": "1.0.0",
+  "description": "AI-powered banner image generator",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.4.0",
+    "canvas": "^3.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "node-fetch": "^2.7.0"
+  },
+  "keywords": [
+    "banner",
+    "image",
+    "generator",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT"
+}
